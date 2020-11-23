@@ -14,7 +14,7 @@
                 <h1>日報管理システム</h1>
             </div>
             <div id="content">
-                ${parama.content}
+                ${param.content}
             </div>
             <div id="footer">
                 by Taro Kirameki.
