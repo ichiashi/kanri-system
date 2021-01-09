@@ -55,6 +55,9 @@ public class Report {
     @Column(name = "content", nullable = false)
     private String content;
 
+    @Column(name = "shoudan", nullable = false)
+    private String shoudan;
+
     @Column(name = "created_at", nullable = false)
     private Timestamp created_at;
 
@@ -97,6 +100,14 @@ public class Report {
         return content;
     }
 
+    public String getShoudan() {
+        return shoudan;
+    }
+
+    public void setShoudan(String shoudan) {
+        this.shoudan = shoudan;
+    }
+
     public void setContent(String content) {
         this.content = content;
     }
@@ -116,4 +127,5 @@ public class Report {
     public void setUpdated_at(Timestamp updated_at) {
         this.updated_at = updated_at;
 }
+
 }
